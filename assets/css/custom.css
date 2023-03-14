@@ -1,0 +1,37 @@
+
+.myRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap: 15px;
+    
+    
+}
+
+.myRow .myCol {
+    /* background-color: red; */
+    border-radius: 6px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    background: #fff;
+}
+
+.accuracy {
+    position: relative;
+}
+.accuracy p{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #EB5757;
+    color: #fff;
+    width: 140px;
+    padding: 8px 4px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+}

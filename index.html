@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+<body>
+    <!------------------------------------
+        header area
+    -------------------------------------->
+    <nav class="container text-center py-3">
+        <h1>AI Universe Hub</h1>
+    </nav>
+
+    <main>
+    <!------------------------------------
+        Sort by date button area
+    -------------------------------------->
+        <section class="py-4">
+            <div class="container text-center">
+                <!-- <button class="btn btn-primary" onclick="sortingAllData()">Sort By Date</button> -->
+                <select class="form-select mx-auto" id="changeSelect" style="width:300px;" aria-label="Default select example">
+                    <option selected>Select Order</option>
+                    <option value="descending">Latest Blog</option>
+                    <option value="ascending">Oldest Blog</option>
+                  </select>
+            </div>
+        </section>
+    <!------------------------------------
+        All card section area
+    -------------------------------------->
+    <section class="py-5">
+        <div class="container">
+    <!------------------------------------
+        All card section area
+    -------------------------------------->
+            <div class="d-none d-flex justify-content-center text-center" id="spin">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+
+
+
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="myAllCard">
+
+
+                
+
+
+            </div>
+        </div>
+    </section>
+    <!------------------------------------
+        See more button area
+    -------------------------------------->
+    <section class="py-4">
+        <div class="container text-end">
+            <button class="btn btn-primary" id="seeMoreBtn">See More</button>
+        </div>
+    </section>
+    </main>
+
+
+
+    <!------------------------------------
+        bootstrap Modal area
+    -------------------------------------->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row" id="modalRow">
+
+
+
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!------------------------------------
+        Script area
+    -------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
